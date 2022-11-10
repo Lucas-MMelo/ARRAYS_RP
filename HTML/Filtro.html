@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loguin</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <input type="text" id="BuscaTXT" placeholder="nome do produto" class="placeText">
+        <input type="button" class="bttnCheck white" value="Buscar" onclick="Buscar()">
+    </header>
+
+    <main>
+
+        <div class="menu">
+
+            <table class="produtos" id="table">
+            </table>
+
+            <section class="check_section">
+                <div>
+                    <input type="radio" id="Qnt" name="checkbox" value="Qnt" checked>
+                    <label for="Qnt">Qnt</label>
+                    <input type="radio" id="R$" name="checkbox" value="R$">
+                    <label for="R$">R$</label>
+                </div>
+                <div>
+                    <input type="text" id="01" class="placeText" placeholder="Escolha" list="options_01" name="options_01"/>
+                    <datalist id="options_01">
+                      <option value="Maior"></option>
+                      <option value="Menor"></option>
+                      <option value="Maior ou igual"></option>
+                      <option value="Menor ou igual"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <input type="text" class="placeNumber" placeholder="0" id="TXTnumber01">
+                </div>
+                <div>
+                    <input type="button" class="bttnCheck" value="filtrar" onclick="Filtrar()">
+                </div>
+            </section>
+
+            <section class="check_section">
+                <div>
+                    <input type="button" class="bttnCheck" value="less 1 Qnt." onclick="lessU()">
+                    <input type="button" class="bttnCheck" value="add 1 Qnt." onclick="moreU()">
+                </div>
+                <div>
+                    <input type="button" class="bttnCheck" value="less R$5,00" onclick="lessP()">
+                    <input type="button" class="bttnCheck" value="add R$5,00" onclick="moreP()">
+                </div>
+            </section>
+
+            <section class="check_section">
+                <input type="button" class="bttnCheck" value="Promoção" onclick="Promotion()">
+                <input type="button" class="bttnCheck" value="Checar Reposição" onclick="Reposition()">
+            </section>
+
+        </div>
+
+        <div class="modal" id="modal_edit">
+            <div class="menu_modal">
+                <span class="exite" id="closetable" onclick="hiddeModal()">&times;</span>
+
+                <table class="produtos" id="ResultSearch">
+                </table>
+
+                <p id="ResultText"></p>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="../JS/filtro.js"></script>
+
+</body>
+</html>

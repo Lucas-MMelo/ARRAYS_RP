@@ -1,0 +1,156 @@
+html, body {
+    background-image: linear-gradient(180deg, rgb(91, 25, 236), rgb(154, 39, 254));
+    margin: 0;
+    height: 100%;
+}
+
+.menu {
+background-color: rgb(254, 254, 255);
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+font-family: 'Segoe UI';
+box-shadow: 5px 5px 5px rgba(90, 0, 0, 0.329);
+}
+
+.produtos {
+width: 100%;
+margin-top: 10px;
+}
+
+.produtos td {
+color: gray;
+font-size: small;
+margin: 0;
+}
+
+.produtos th {
+color: rgb(154, 39, 254);
+
+}
+
+.produtos td:nth-child(2),
+.produtos td:nth-child(3) {
+text-align: center;
+}
+
+.produtos th {
+text-align: center;
+}
+
+header {
+display: flex;
+justify-content: right;
+background-color: rgb(0, 25, 95);
+padding: 10px;
+}
+
+.check_section {
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: rgb(255, 248, 248);
+color: rgb(90, 90, 90);
+border-radius: 4px;
+padding: 4px;
+padding-left: 30px;
+padding-right: 30px;
+box-shadow: 4px 4px 4px rgba(202, 202, 202, 0.274);
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.check_section div {
+margin-left: 4px;
+margin-right: 4px;
+}
+
+.placeNumber {
+width: 20px;
+margin-right: 10px;
+}
+
+.placeText {
+width: 120px;
+margin-right: 10px;
+}
+
+::-webkit-input-placeholder {
+color: rgb(221, 221, 221);
+}
+
+.bttnCheck {
+background-color: rgb(255, 136, 145);
+border: none;
+color: white;
+height: 20px;
+border-radius: 4px;
+margin: 4px;
+margin-left: 10px;
+margin-right: 10px;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 9px;
+}
+
+.bttnCheck:hover {
+background-color: rgb(154, 39, 254);
+cursor: pointer;
+}
+
+.modal {
+position: fixed;
+padding: 0;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.8);
+transform: scale(1.1);
+
+opacity: 0;
+visibility: hidden;
+transition:visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.modalOn {
+opacity: 1;
+visibility: visible;
+transform: scale(1.0);
+}
+
+.menu_modal {
+background-color: rgb(254, 254, 255);
+margin: 20px;
+padding: 20px;
+border-radius: 10px;
+font-family: 'Segoe UI';
+box-shadow: 5px 5px 5px rgba(26, 26, 26, 0.329);
+
+font-family: 'Segoe UI';
+color: gray;
+font-size: small;
+}
+
+.menu_modal p {
+margin-bottom: 0;
+line-height: 40px;
+}
+
+.exite {
+background-color: rgb(255, 136, 145);
+color: white;
+border-radius: 20px;
+padding-left: 6px;
+padding-right: 6px;
+padding-bottom: 3px;
+}
+
+.exite:hover {
+background-color: rgb(154, 39, 254);
+cursor: pointer;
+}
